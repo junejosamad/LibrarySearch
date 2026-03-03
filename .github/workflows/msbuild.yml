@@ -17,7 +17,7 @@ jobs:
       uses: microsoft/setup-msbuild@v2
 
     - name: Build Solution
-      run: msbuild "Unit Test\Unit Test.slnx" /p:Configuration=Release /p:Platform=x64
+      run: msbuild "Unit Test\Unit Test.slnx" /p:Configuration=Release /p:Platform=x64 /p:PlatformToolset=v143
 
     - name: Run Native Unit Tests
       shell: cmd
