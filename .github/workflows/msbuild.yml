@@ -18,7 +18,7 @@ jobs:
       uses: microsoft/setup-msbuild@v2
  
     - name: Build Solution
-      run: msbuild SearchLibrarySolution.sln /p:Configuration=Release /p:Platform=x64
+      run: msbuild "Unit Test\Unit Test.slnx" /p:Configuration=Release /p:Platform=x64
  
     - name: Setup VSTest.console.exe
       uses: dpauli/setup-vstest@v1
