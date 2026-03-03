@@ -1,0 +1,27 @@
+name: C++ CI Pipeline (MSBuild & Native Unit Tests)
+ 
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+ 
+jobs:
+  build-and-test:
+    runs-on: windows-latest
+ 
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+ 
+    - name: Add MSBuild to PATH
+      uses: microsoft/setup-msbuild@v2
+ 
+    - name: Build Solution
+      run: msbuild SearchLibrarySolution.sln /p:Configuration=Release /p:Platform=x64
+ 
+    - name: Setup VSTest.console.exe
+      uses: dpauli/setup-vstest@v1
+      
+    - name: Run Native Unit Tests
+      run: vstest.console.exe "**\Release\*Test*.dll" 

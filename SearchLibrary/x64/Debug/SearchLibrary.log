@@ -1,0 +1,6 @@
+﻿  SearchAlgorithms.cpp
+D:\University Work\6th Spring 26\Assignments\SQE\1\SearchLibrary\SearchAlgorithms.cpp(8,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\University Work\6th Spring 26\Assignments\SQE\1\SearchLibrary\SearchAlgorithms.cpp(42,11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\University Work\6th Spring 26\Assignments\SQE\1\SearchLibrary\SearchAlgorithms.cpp(43,14): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\University Work\6th Spring 26\Assignments\SQE\1\SearchLibrary\SearchAlgorithms.cpp(48,26): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+  SearchLibrary.vcxproj -> D:\University Work\6th Spring 26\Assignments\SQE\1\Unit Test\x64\Debug\SearchLibrary.lib
