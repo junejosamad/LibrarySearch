@@ -77,11 +77,6 @@ namespace UnitTest
 			Assert::AreEqual(5, searchAlgo.JumpSearch(5, arr));
 		}
 
-		TEST_METHOD(JumpSearch_KeyLargerThanAll_ReturnsMinusOne)
-		{
-			vector<int> arr = { 0, 1, 1, 2, 3, 5, 8 };
-			Assert::AreEqual(-1, searchAlgo.JumpSearch(99, arr));
-		}
 
 		TEST_METHOD(JumpSearch_KeyLargerThanAll_ReturnsMinusOne)
 		{
